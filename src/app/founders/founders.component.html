@@ -1,0 +1,25 @@
+<div class="content">
+	<h1>Fundadores</h1>
+	<p>Somos el equipo de {{ '<' }}DevSoft{{ '/>' }}</p>
+</div>
+
+<div class="background">
+	<img
+		src="../../assets/images/founders-background.svg"
+		alt="founders-background"
+	/>
+</div>
+
+<div class="founders">
+	<div *ngFor="let item of founders" class="founder">
+		<div class="image">
+			<img src="{{ item.image }}" alt="photo" />
+		</div>
+
+		<div class="info">
+			<h1>{{ item.name }}</h1>
+			<p>{{ item.job }}</p>
+			<p>{{ item.email }}</p>
+		</div>
+	</div>
+</div>

@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "cubipool-landing-page": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cubipool-landing-page"
+    }
+  },
+  "defaultProject": "cubipool-landing-page",
+  "cli": {
+    "analytics": false
+  }
 }
