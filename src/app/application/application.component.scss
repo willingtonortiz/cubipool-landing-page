@@ -1,5 +1,5 @@
 :host {
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 
 	display: flex;
@@ -10,8 +10,8 @@
 		margin-left: 32px;
 
 		h1 {
-            margin-bottom: 8px;
-            font-size: 48px;
+			margin-bottom: 8px;
+			font-size: 48px;
 		}
 
 		p {
@@ -40,5 +40,38 @@
 
 	.wave {
 		max-width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	:host {
+
+		.content {
+			margin-left: 16px;
+
+			h1 {
+				font-size: 28px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+		}
+
+		.app {
+			padding: 0;
+			
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: space-around;
+
+			img {
+				max-height: 200px;
+			}
+
+			img:nth-child(2n) {
+				align-self: auto;
+			}
+		}
 	}
 }

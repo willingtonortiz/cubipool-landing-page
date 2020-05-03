@@ -1,11 +1,12 @@
 :host {
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 
 	position: relative;
 
 	display: flex;
 	flex-flow: column nowrap;
+	justify-content: space-between;
 	align-items: center;
 
 	.circle {
@@ -36,12 +37,17 @@
 		display: flex;
 		flex-flow: column nowrap;
 		align-items: center;
+		margin-top: 32px;
+
+		img {
+			max-width: 400px;
+		}
 
 		p {
 			margin: 64px 0;
 			color: #ff6363;
 			font-weight: bold;
-			font-size: 20px;
+			font-size: 24px;
 		}
 
 		button {
@@ -60,5 +66,38 @@
 	.wave-bottom {
 		max-width: 100%;
 		min-width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	:host {
+		width: 100vw;
+		height: 100vh;
+
+		.circle {
+			max-width: 100px;
+			max-height: 100px;
+		}
+
+		.social {
+			p {
+				font-size: 14px;
+			}
+
+			img {
+				max-width: 25px;
+				max-height: 25px;
+			}
+		}
+
+		.main {
+			img {
+				max-width: 250px;
+			}
+
+			p{
+				font-size: 16px;
+			}
+		}
 	}
 }
