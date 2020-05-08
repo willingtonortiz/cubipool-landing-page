@@ -22,3 +22,9 @@ import { HomeComponent } from './home/home.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+/*
+Comandos para hacer deploy en github
+ng build --prod --base-href https://willingtonortiz.github.io/cubipool-landing-page/
+ngh --dir=dist/cubipool-landing-page
+*/
