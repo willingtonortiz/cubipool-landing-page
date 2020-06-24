@@ -1,5 +1,4 @@
 :host {
-	width: 100vw;
 	height: 100vh;
 
 	position: relative;
@@ -8,96 +7,96 @@
 	flex-flow: column nowrap;
 	justify-content: space-between;
 	align-items: center;
+}
 
-	.circle {
-		position: absolute;
-		left: 16px;
-		top: 16px;
+.circle {
+	position: absolute;
+	left: 16px;
+	top: 16px;
+}
+
+.social {
+	padding: 16px;
+	align-self: flex-end;
+
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+
+	p {
+		margin-right: 16px;
 	}
 
-	.social {
+	img {
+		margin: 0 8px;
+		cursor: pointer;
+	}
+}
+
+.main {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin-top: 32px;
+
+	img {
+		max-width: 400px;
+	}
+
+	p {
+		margin: 64px 0;
+		color: #ff6363;
+		font-weight: bold;
+		font-size: 24px;
+	}
+
+	button {
+		width: 200px;
 		padding: 16px;
-		align-self: flex-end;
-
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: center;
-
-		p {
-			margin-right: 16px;
-		}
-
-		img {
-			margin: 0 8px;
-			cursor: pointer;
-		}
+		border: none;
+		border-radius: 10px;
+		background-color: #ff6363;
+		color: #ffffff;
+		cursor: pointer;
+		font-size: 20px;
+		font-weight: bold;
 	}
+}
 
-	.main {
-		display: flex;
-		flex-flow: column nowrap;
-		align-items: center;
-		margin-top: 32px;
-
-		img {
-			max-width: 400px;
-		}
-
-		p {
-			margin: 64px 0;
-			color: #ff6363;
-			font-weight: bold;
-			font-size: 24px;
-		}
-
-		button {
-			width: 200px;
-			padding: 16px;
-			border: none;
-			border-radius: 10px;
-			background-color: #ff6363;
-			color: #ffffff;
-			cursor: pointer;
-			font-size: 20px;
-			font-weight: bold;
-		}
-	}
-
-	.wave-bottom {
-		max-width: 100%;
-		min-width: 100%;
-	}
+.wave-bottom {
+	max-width: 100%;
+	min-width: 100%;
 }
 
 @media (max-width: 600px) {
 	:host {
 		width: 100vw;
 		height: 100vh;
+	}
 
-		.circle {
-			max-width: 100px;
-			max-height: 100px;
+	.circle {
+		max-width: 100px;
+		max-height: 100px;
+	}
+
+	.social {
+		p {
+			font-size: 14px;
 		}
 
-		.social {
-			p {
-				font-size: 14px;
-			}
+		img {
+			max-width: 25px;
+			max-height: 25px;
+		}
+	}
 
-			img {
-				max-width: 25px;
-				max-height: 25px;
-			}
+	.main {
+		img {
+			max-width: 250px;
 		}
 
-		.main {
-			img {
-				max-width: 250px;
-			}
-
-			p{
-				font-size: 16px;
-			}
+		p {
+			font-size: 16px;
 		}
 	}
 }
